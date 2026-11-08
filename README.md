@@ -1,7 +1,7 @@
 # Home-Assistant-Add-ons (Martin Kistler)
 
 Eigenes Add-on-Repository für Home Assistant. Einbinden:
-**Einstellungen → Add-ons/Apps → Store → ⋮ → Repositories** → `https://gitlab.com/MartinKist/ha-addons` hinzufügen.
+**Einstellungen → Add-ons/Apps → Store → ⋮ → Repositories** → `https://github.com/MartinKist/ha-addons` hinzufügen.
 
 | Add-on | Beschreibung |
 |---|---|

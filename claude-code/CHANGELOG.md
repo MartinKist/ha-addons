@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.1.0
-- Umzug vom lokalen Add-on in das Repository `gitlab.com/MartinKist/ha-addons` (neuer Slug `<repo-hash>_claude_code`, eigenes `/data`; einmal neu einloggen).
+- Umzug vom lokalen Add-on in das Repository `github.com/MartinKist/ha-addons` (neuer Slug `<repo-hash>_claude_code`, eigenes `/data`; einmal neu einloggen).
 - **Web-Terminal über Ingress** („Benutzeroberfläche öffnen“, ttyd): Login per `claude` → `/login` direkt aus HA, kein `docker exec` mehr.
 - `run.sh` belegt Vertrauen in `/homeassistant` und die Remote-Control-Zustimmung in `/data/.claude.json` vor und wartet auf den Login; Remote Control startet danach automatisch ohne Neustart.
 

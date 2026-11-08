@@ -1,11 +1,11 @@
 # Home-Assistant-Add-on ("App"): Claude Code Remote Control auf /config
-# Repository: https://gitlab.com/MartinKist/ha-addons
+# Repository: https://github.com/MartinKist/ha-addons
 # Doku Schema: https://contributors.home-assistant.io/apps/reference/configuration/
 name: Claude Code
 version: "1.1.0"
 slug: claude_code
 description: Claude Code Remote Control auf /config, Login über das Web-Terminal (Ingress)
-url: https://gitlab.com/MartinKist/ha-addons/-/tree/main/claude-code
+url: https://github.com/MartinKist/ha-addons/tree/main/claude-code
 arch:
   - amd64
   - aarch64

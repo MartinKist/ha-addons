@@ -1,7 +1,7 @@
 # Claude Code – Remote Control auf Home Assistant /config
 
 Home-Assistant-Add-on (in der aktuellen HA-Oberflaeche heissen Add-ons „Apps“) aus dem Repository
-`https://gitlab.com/MartinKist/ha-addons`, das
+`https://github.com/MartinKist/ha-addons`, das
 [Claude Code](https://code.claude.com/docs/en/overview) im **Remote-Control-Server-Modus**
 auf dem HA-Konfigurationsverzeichnis laufen laesst. Die Session wird aus der Claude-App
 bzw. unter <https://claude.ai/code> gesteuert, der `claude`-Prozess und alle Dateien bleiben
@@ -34,7 +34,7 @@ claude-code/
 ## Installation
 
 1. **Einstellungen → Add-ons/Apps → Add-on-Store** (bzw. „App installieren“) öffnen,
-   oben rechts **⋮ → Repositories** → `https://gitlab.com/MartinKist/ha-addons` hinzufügen.
+   oben rechts **⋮ → Repositories** → `https://github.com/MartinKist/ha-addons` hinzufügen.
 2. Ggf. **⋮ → Nach Updates suchen** und Seite neu laden; Abschnitt **Martin Kistler HA Add-ons** →
    **Claude Code** → **Installieren**. Der Supervisor baut das Image auf dem Geraet (dauert einige Minuten).
 3. Unter **Konfiguration** den `session_name` setzen (pro HA-Instanz einen eigenen Namen, dann sind die
