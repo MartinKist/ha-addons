@@ -1,0 +1,33 @@
+# Home-Assistant-Add-on ("App"): Claude Code Remote Control auf /config
+# Repository: https://gitlab.com/MartinKist/ha-addons
+# Doku Schema: https://contributors.home-assistant.io/apps/reference/configuration/
+name: Claude Code
+version: "1.1.0"
+slug: claude_code
+description: Claude Code Remote Control auf /config, Login über das Web-Terminal (Ingress)
+url: https://gitlab.com/MartinKist/ha-addons/-/tree/main/claude-code
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+# Das Image bringt tini als PID 1 mit (ENTRYPOINT im Dockerfile), daher kein Docker-Init.
+init: false
+map:
+  # HA-/config -> /homeassistant im Container, schreibbar.
+  - type: homeassistant_config
+    read_only: false
+hassio_api: true
+homeassistant_api: true
+# "homeassistant" statt "default", damit "ha core check" / "ha core restart" ueber die Supervisor-API erlaubt sind.
+hassio_role: homeassistant
+# Web-Terminal (ttyd) ueber Ingress: Login (`claude` -> /login) und Diagnose direkt aus der HA-Oberflaeche,
+# kein docker exec mehr noetig. Nur ueber die HA-Anmeldung erreichbar, kein offener Port.
+ingress: true
+ingress_port: 7681
+panel_icon: mdi:robot-outline
+panel_title: Claude Code
+options:
+  session_name: "Home Assistant"
+schema:
+  session_name: str
